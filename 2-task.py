@@ -12,7 +12,7 @@ def get_numbers_ticket(min, max, quantity):
     elif min >= max:
         print("Недостатня кількість білетів. Мінімальна кількість білетів має бути більше 1.")
         return []
-    elif quantity <= 0:
+    elif quantity > max - min + 1:
         print("Мінімальне число має бути менше максимального.")
         return []
     else:
