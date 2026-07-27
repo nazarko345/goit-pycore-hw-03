@@ -6,7 +6,7 @@ def get_days_from_today(date):
         todays_date = datetime.datetime.today().date()
         delta = todays_date - specific_date
         return delta.days
-    except AttributeError:
+    except ValueError:
         return None
     
 get_days_from_today("2023-06-01") # приклад використання функції
